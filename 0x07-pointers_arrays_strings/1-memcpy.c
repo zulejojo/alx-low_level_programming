@@ -15,5 +15,5 @@ int counter;
 for (counter = 0; counter < size; counter++)
 dest[counter]=src[counter];
 }
-return(dest);
+return (dest);
 }
