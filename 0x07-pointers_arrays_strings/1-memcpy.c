@@ -4,8 +4,7 @@
 * @src: copy source
 * @dest: Copy destination
 * @n: no of bytes
-*
-* returns dest
+* Return: pointer to dest
 */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
