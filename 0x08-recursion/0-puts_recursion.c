@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* A function that prints a string , followed by a new line
-* the program uses _puts_recurson
-* returns nothings
+* _puts_recursion-  function that prints a string , followed by a new line
+* @s: memory address to fill 
+* returns: nothings
 */
 void _puts_recursion(char *s) /* delcaring function puts recursion */
 {
