@@ -7,9 +7,9 @@
 int factorial(int n)
 {
 if (n < 0)
-return -1; /* to indicate erorr */
+return (-1); /* to indicate erorr */
 else if (n == 0) /* to show n is equql to zero */
-return 1;
+return (1);
 else
-return (n * factorial( n-1));
+return (n * factorial(n - 1)); /* returns the factorials here */
 }
