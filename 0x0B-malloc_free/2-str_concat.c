@@ -5,7 +5,7 @@
 *Return: i
 */
 int _strlen(char *s)
-{ 
+{
 unsigned int i;
 i = 0;
 while (s[i] != '\0') /*Count character of string*/
