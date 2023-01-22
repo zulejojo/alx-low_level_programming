@@ -5,7 +5,7 @@
 *Return: i
 */
 int _strlen(char *s)
-{  
+{ 
 unsigned int i;
 i = 0;
 while (s[i] != '\0') /*Count character of string*/
@@ -29,10 +29,10 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-/*count size total*/
+/* count size total */
 size = (_strlen(s1) + _strlen(s2) + 1);
-/*malloc*/
-dst = (char *) malloc(size * sizeof(char));
+/* malloc*/
+dst = (char * ) malloc(size * sizeof(char));
 if (dst == 0)
 {
 return (NULL);
