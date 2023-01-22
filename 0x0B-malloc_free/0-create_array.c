@@ -9,18 +9,26 @@
 */
 char *create_array(unsigned int size, char c)
 {
+char *buffer;
+unsigned int position;
 if (size == 0)
 {
 return (NULL);
 }
-char *arr = (char *)malloc(size * sizeof(char));
-if (arr == NULL)
+/*Define values with malloc*/
+buffer = (char *) malloc(size * sizeof(c));
+if (buffer == 0)
 {
 return (NULL);
 }
-for (unsigned int i = 0; i < size; i++)
+else
 {
-arr[i] = c;
+position = 0;
+while (position < size) /*While for array*/
+{
+*(buffer + position) = c;
+ position++;
 }
-return (arr);
+return (buffer);
+}
 }
