@@ -20,7 +20,7 @@ else
 {
 return (malloc(new_size));
 }
-(new_size == old_size)
+if (new_size == old_size)
 {
 return (ptr);
 }
