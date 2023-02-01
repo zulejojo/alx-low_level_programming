@@ -20,7 +20,7 @@ if (!*head && !idx)
 {
 *head = node;
 return (node);
-}
+}  
 else if (!*head && idx)
 return (NULL);
 else if (!idx)
