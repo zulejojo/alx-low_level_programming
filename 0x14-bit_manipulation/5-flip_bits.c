@@ -1,16 +1,21 @@
 #include "main.h"
 /**
-* clear_bit - sets the value of a bit to 0 at a given index
-* @n: unsigned long to change
-* @index: index to change to zero
-* Return: 1 if it worked or -1 if an error occurred
+* flip_bits - number of bits you would need to flip
+* to get from one number to another
+* @n: parameter
+* @m: destiny
+* Return: nflips
 */
-int clear_bit(unsigned long int *n, unsigned int index)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-int clear;
-if (index > 53 || !n)
-return (-1);
-clear = 1 << index;
-*n = (*n & ~clear) | ((0 << index) & clear);
-return (1);
+unsigned int i, nflips = 0;
+unsigned long int j = sizeof(unsigned long int) * 8;
+for (i = 0; i < j; i++)
+{
+if ((m & 1) != (n & 1))
+nflips += 1;
+n = n >> 1;
+m = m >> 1;
+}
+return (nflips);
 }
